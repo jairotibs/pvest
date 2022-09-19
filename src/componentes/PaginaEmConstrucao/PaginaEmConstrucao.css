@@ -1,0 +1,13 @@
+.emconstrucao{
+    justify-content: center;
+    display: flex;
+    margin-top:-350px;
+    margin-left:500px;
+    
+}
+
+.emconstrucao div img{
+   background-size: 1000px 1500px;
+  
+}
+

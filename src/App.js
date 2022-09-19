@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import ConteinerAulasDia from './componentes/ConteinerAulasDia';
+import NavBar from './componentes/NavBar';
+import PaginaEmConstrucao from './componentes/PaginaEmConstrucao';
+import {BrowserRouter as Router,  Route, Switch} from 'react-router-dom'
 
 function App() {
+  //lista de itens da âncora
+  const listaAncora = [{link:'', mensagem:'Home'}, {link:'', mensagem:'Inscricoes'},{link:'', mensagem:'Institucional'}, {link:'', mensagem:'Sobre Nós'}]
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar listaMenu={listaAncora}/>
+      <div className="alinhamento">
+      <ConteinerAulasDia />
+      <PaginaEmConstrucao />
+      </div>
     </div>
-  );
-}
-
-export default App;
+    </Router>
+  )
+}export default App;

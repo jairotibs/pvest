@@ -1,0 +1,17 @@
+.conteiner{
+    display:flex;
+    justify-content: left;
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-top: 60px;
+    max-width: 60%;
+    
+}
+
+*.conteiner div{
+    max-width:80%;
+    background-color: #f2f2f2;
+    padding: 36px 64px;
+    margin-top: 20px;
+    box-shadow: 8px 8px 16px rgba(0,0,0, 0.08);
+}
